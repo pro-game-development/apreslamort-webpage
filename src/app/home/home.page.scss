@@ -25,3 +25,90 @@
 #container a {
   text-decoration: none;
 }
+
+
+.header{
+  height: 100px;
+  background-color: #030200;
+  opacity: 0.95;
+}
+
+.logo{
+  width: 500px;
+  height: 90px;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+}
+
+.gameplayCard{
+  width: 350px;
+  height: 110px;
+  margin-left: 2.5%;
+  margin-top: 15%;
+  opacity: 0.5;
+  background-color: #581845;
+  text-align: center;
+}
+
+.musicCard{
+  width: 350px;
+  height: 110px;
+  margin-left: 2.5%;
+  margin-top: 5%;
+  opacity: 0.5;
+  background-color: #581845;
+  text-align: center;
+}
+
+.designCard{
+  width: 350px;
+  height: 110px;
+  margin-left: 79%;
+  margin-top: -18%;
+  opacity: 0.5;
+  background-color: #581845;
+  text-align: center;
+}
+
+.storyCard{
+  width: 350px;
+  height: 110px;
+  margin-left: 79%;
+  margin-top: 5%;
+  opacity: 0.5;
+  background-color: #581845;
+  text-align: center;
+}
+
+.difficultyCard{
+  width: 350px;
+  height: 110px;
+  margin-left: 40%;
+  margin-top: 5%;
+  opacity: 0.5;
+  background-color: #581845;
+  text-align: center;
+}
+
+ion-content.background{
+  --background: url(../../assets/Images/back.png) 0 0/100% 100% no-repeat;
+}
+
+.rating-list {
+  display: inline-block;
+  list-style: none;
+}
+.rating-list li {
+  font-size: 20px;
+  float: right;
+  color: #ddd;
+}
+.rating-list li:hover {
+  color: #ffd700;
+}
+.rating-list li:hover ~ li {
+  color: #ffd700;
+}
+.rating-list li.selected {
+  color: #ffd700;
+}
