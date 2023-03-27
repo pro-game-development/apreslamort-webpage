@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpServiceService } from '../http-service.service';
+import { HttpClient } from '@angular/common/http';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-home',
@@ -24,12 +26,21 @@ export class HomePage {
   public data5: any;
 
 
-  constructor(private httpService: HttpServiceService) { }
+  constructor(private httpService: HttpServiceService, private http: HttpClient) { }
 
 
   ngOnInit() {
     console.log(this.stars);
     console.log(this.selectedValue);
+  }
+
+  downloadFile() {
+    const url = '/assets/Manual.pdf'; // replace with your file URL
+    this.http.get(url, { responseType: 'blob' }).subscribe(res => {
+      const file = new Blob([res], { type: 'application/pdf' }); // replace with your file type
+      const fileName = 'Manual.pdf'; // replace with your file name
+      saveAs(file, fileName);
+    });
   }
 
   //counting stars
