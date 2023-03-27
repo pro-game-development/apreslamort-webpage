@@ -34,16 +34,16 @@
 }
 
 .logo{
-  width: 500px;
+  width: 350px;
   height: 90px;
-  margin-left: 2.5%;
+  margin-left: 3%;
   margin-top: .5%;
 }
 
 .gameplayCard{
   width: 350px;
-  height: 110px;
-  margin-left: 2.5%;
+  height: 130px;
+  margin-left: 3%;
   margin-top: 15%;
   opacity: 0.5;
   background-color: #581845;
@@ -52,8 +52,8 @@
 
 .musicCard{
   width: 350px;
-  height: 110px;
-  margin-left: 2.5%;
+  height: 130px;
+  margin-left: 3%;
   margin-top: 5%;
   opacity: 0.5;
   background-color: #581845;
@@ -62,9 +62,9 @@
 
 .designCard{
   width: 350px;
-  height: 110px;
-  margin-left: 79%;
-  margin-top: -18%;
+  height: 130px;
+  margin-left: 3%;
+  margin-top: 5%;
   opacity: 0.5;
   background-color: #581845;
   text-align: center;
@@ -72,8 +72,8 @@
 
 .storyCard{
   width: 350px;
-  height: 110px;
-  margin-left: 79%;
+  height: 130px;
+  margin-left: 3%;
   margin-top: 5%;
   opacity: 0.5;
   background-color: #581845;
@@ -82,8 +82,8 @@
 
 .difficultyCard{
   width: 350px;
-  height: 110px;
-  margin-left: 40%;
+  height: 130px;
+  margin-left: 3%;
   margin-top: 5%;
   opacity: 0.5;
   background-color: #581845;
@@ -135,6 +135,14 @@ ion-content.background{
   font-family: 'stranger';
 }
 
+.DownloadButton{
+  margin-left: 28%;
+
+}
+
+.cards{
+  margin-top: 15%;
+}
 
 
 

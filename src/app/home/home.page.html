@@ -1,11 +1,5 @@
 <ion-header class="header">
   <img class="logo" src="../../assets/Images/ap.png" />
-  <div class="wrapper1">
-    <ion-button font-familiy='stranger' color="medium" (click)="downloadFile()">User Manual</ion-button>
-  </div>
-  <div class="wrapper2">
-    <ion-button font-familiy='stranger' color="medium" (click)="downloadFileDoc()">Documentation</ion-button>
-  </div>
 </ion-header>
 
 <ion-content padding class="background">
@@ -54,10 +48,6 @@
     </ion-card-content>
   </ion-card>
 
-  <div>
-    <ion-button color="medium" style="margin-left: 47vw; " (click)="subscribePost()">Rate!</ion-button>
-  </div>
-
   <ion-card class="storyCard">
     <ion-card-header>
       <ion-card-title class="cardTittle">Story</ion-card-title>
@@ -87,5 +77,25 @@
     </ion-card-content>
   </ion-card>
 
+  <div>
+    <ion-button color="medium" style="margin-left: 40vw; " (click)="subscribePost()">Rate!</ion-button>
+  </div>
+
+  <ion-menu contentId="main-content">
+    <ion-menu-toggle>
+      <ion-button font-familiy='stranger' color="medium">Click to close the menu</ion-button>
+      <div>
+        <ion-button font-familiy='stranger' color="medium" (click)="downloadFile()">User Manual</ion-button>
+      </div>
+      <div>
+        <ion-button font-familiy='stranger' color="medium" (click)="downloadFileDoc()">Documentation</ion-button>
+      </div>
+    </ion-menu-toggle>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-menu-toggle>
+      <ion-button font-familiy='stranger' color="medium" class="DownloadButton">DOWNLOAD FILES</ion-button>
+    </ion-menu-toggle>
+  </div>
 
 </ion-content>
