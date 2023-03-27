@@ -1,0 +1,7 @@
+{
+  "name": "apreslamort",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
