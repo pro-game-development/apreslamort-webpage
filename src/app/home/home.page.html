@@ -16,7 +16,7 @@
   
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star)"
+        <li (click)="countStar(star, 'Gameplay')" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star, 'Gameplay')"
           (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
         </li>
       </ul>
@@ -30,7 +30,7 @@
   
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star)"
+        <li (click)="countStar(star , 'Music')" [ngClass]="{'selected': (star <= selectedValue2)}" (mouseover)="addClass(star , 'Music')"
           (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
         </li>
       </ul>
@@ -44,7 +44,7 @@
   
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star)"
+        <li (click)="countStar(star, 'Design')" [ngClass]="{'selected': (star <= selectedValue3)}" (mouseover)="addClass(star, 'Design')"
           (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
         </li>
       </ul>
@@ -58,7 +58,7 @@
   
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star)"
+        <li (click)="countStar(star, 'Story')" [ngClass]="{'selected': (star <= selectedValue4)}" (mouseover)="addClass(star, 'Story')"
           (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
         </li>
       </ul>
@@ -72,7 +72,7 @@
   
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star)"
+        <li (click)="countStar(star, 'Difficulty')" [ngClass]="{'selected': (star <= selectedValue5)}" (mouseover)="addClass(star, 'Difficulty')"
           (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
         </li>
       </ul>
