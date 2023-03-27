@@ -1,51 +1,54 @@
 <ion-header class="header">
   <img class="logo" src="../../assets/Images/ap.png" />
   <div class="wrapper1">
-      <ion-button font-familiy = 'stranger' color="medium" (click)="downloadFile()">User Manual</ion-button>
+    <ion-button font-familiy='stranger' color="medium" (click)="downloadFile()">User Manual</ion-button>
   </div>
   <div class="wrapper2">
-    <ion-button color="medium">Documentation</ion-button>
-</div>
+    <ion-button font-familiy='stranger' color="medium" (click)="downloadFileDoc()">Documentation</ion-button>
+  </div>
 </ion-header>
 
 <ion-content padding class="background">
-  <ion-card class = "gameplayCard">
+  <ion-card class="gameplayCard">
     <ion-card-header>
       <ion-card-title class="cardTittle">Gameplay</ion-card-title>
     </ion-card-header>
-  
+
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star, 'Gameplay')" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star, 'Gameplay')"
-          (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
+        <li (click)="countStar(star, 'Gameplay')" [ngClass]="{'selected': (star <= selectedValue)}"
+          (mouseover)="addClass(star, 'Gameplay')" (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon
+              name="star-outline"></ion-icon> </span>
         </li>
       </ul>
     </ion-card-content>
   </ion-card>
 
-  <ion-card class = "musicCard">
+  <ion-card class="musicCard">
     <ion-card-header>
       <ion-card-title class="cardTittle">Music</ion-card-title>
     </ion-card-header>
-  
+
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star , 'Music')" [ngClass]="{'selected': (star <= selectedValue2)}" (mouseover)="addClass(star , 'Music')"
-          (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
+        <li (click)="countStar(star , 'Music')" [ngClass]="{'selected': (star <= selectedValue2)}"
+          (mouseover)="addClass(star , 'Music')" (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon
+              name="star-outline"></ion-icon> </span>
         </li>
       </ul>
     </ion-card-content>
   </ion-card>
 
-  <ion-card class = "designCard">
+  <ion-card class="designCard">
     <ion-card-header>
       <ion-card-title class="cardTittle">Design</ion-card-title>
     </ion-card-header>
-  
+
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star, 'Design')" [ngClass]="{'selected': (star <= selectedValue3)}" (mouseover)="addClass(star, 'Design')"
-          (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
+        <li (click)="countStar(star, 'Design')" [ngClass]="{'selected': (star <= selectedValue3)}"
+          (mouseover)="addClass(star, 'Design')" (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon
+              name="star-outline"></ion-icon> </span>
         </li>
       </ul>
     </ion-card-content>
@@ -55,32 +58,34 @@
     <ion-button color="medium" style="margin-left: 47vw; " (click)="subscribePost()">Rate!</ion-button>
   </div>
 
-  <ion-card class = "storyCard">
+  <ion-card class="storyCard">
     <ion-card-header>
       <ion-card-title class="cardTittle">Story</ion-card-title>
     </ion-card-header>
-  
+
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star, 'Story')" [ngClass]="{'selected': (star <= selectedValue4)}" (mouseover)="addClass(star, 'Story')"
-          (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
+        <li (click)="countStar(star, 'Story')" [ngClass]="{'selected': (star <= selectedValue4)}"
+          (mouseover)="addClass(star, 'Story')" (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon
+              name="star-outline"></ion-icon> </span>
         </li>
       </ul>
     </ion-card-content>
   </ion-card>
-  <ion-card class = "difficultyCard">
+  <ion-card class="difficultyCard">
     <ion-card-header>
       <ion-card-title class="cardTittle">Difficulty</ion-card-title>
     </ion-card-header>
-  
+
     <ion-card-content>
       <ul class="list-inline rating-list" *ngFor="let star of stars; let i= index">
-        <li (click)="countStar(star, 'Difficulty')" [ngClass]="{'selected': (star <= selectedValue5)}" (mouseover)="addClass(star, 'Difficulty')"
-          (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon name="star-outline"></ion-icon> </span>
+        <li (click)="countStar(star, 'Difficulty')" [ngClass]="{'selected': (star <= selectedValue5)}"
+          (mouseover)="addClass(star, 'Difficulty')" (mouseout)="removeClass()"> <span class="material-icons"> <ion-icon
+              name="star-outline"></ion-icon> </span>
         </li>
       </ul>
     </ion-card-content>
   </ion-card>
 
-  
+
 </ion-content>

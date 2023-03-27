@@ -43,6 +43,15 @@ export class HomePage {
     });
   }
 
+  downloadFileDoc() {
+    const url = '/assets/FinalDocumentation.pdf'; // replace with your file URL
+    this.http.get(url, { responseType: 'blob' }).subscribe(res => {
+      const file = new Blob([res], { type: 'application/pdf' }); // replace with your file type
+      const fileName = 'FinalDocumentation.pdf'; // replace with your file name
+      saveAs(file, fileName);
+    });
+  }
+
   //counting stars
 
   countStar(star: number, type: string) {
