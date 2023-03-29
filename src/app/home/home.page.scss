@@ -34,8 +34,10 @@
 }
 
 .logo{
-  width: 350px;
-  height: 90px;
+  width: 40vw;
+  height: 10vh;
+  max-width: 350px;
+  max-height: 95px;
   margin-left: 3%;
   margin-top: .5%;
 }
@@ -43,8 +45,8 @@
 .gameplayCard{
   width: 350px;
   height: 130px;
-  margin-left: 3%;
-  margin-top: 5%;
+  // margin-left: 3%;
+  // margin-top: 5%;
   opacity: 0.5;
   background-color: #581845;
   text-align: center;
@@ -53,8 +55,8 @@
 .musicCard{
   width: 350px;
   height: 130px;
-  margin-left: 3%;
-  margin-top: 5%;
+  // margin-left: 3%;
+  // margin-top: 5%;
   opacity: 0.5;
   background-color: #581845;
   text-align: center;
@@ -63,8 +65,8 @@
 .designCard{
   width: 350px;
   height: 130px;
-  margin-left: 79%;
-  margin-top: -20%;
+  // margin-left: 79%;
+  // margin-top: -20%;
   opacity: 0.5;
   background-color: #581845;
   text-align: center;
@@ -73,8 +75,8 @@
 .storyCard{
   width: 350px;
   height: 130px;
-  margin-left: 79%;
-  margin-top: 5%;
+  // margin-left: 79%;
+  // margin-top: 5%;
   opacity: 0.5;
   background-color: #581845;
   text-align: center;
@@ -83,8 +85,8 @@
 .difficultyCard{
   width: 350px;
   height: 130px;
-  margin-left: 40%;
-  margin-top: 5%;
+  // margin-left: 40%;
+  // margin-top: 5%;
   opacity: 0.5;
   background-color: #581845;
   text-align: center;
@@ -145,7 +147,16 @@ ion-content.background{
   margin-left: 0%;
 }
 
+// #main-content{
+//   width: 50vw;
+// }
 
+.cards_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
